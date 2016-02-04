@@ -1,6 +1,14 @@
-Test runner for rspec and ExUnit, autodetects command based on the file you are in.
+Test runner that supports Rspec and ExUnit
 
+Autodetects test framework based on the file you are in.
+
+Install with vundler:
+```vim
+Bundle 'kcurtin/vim-test-runner'
 ```
+
+Add the keybindings do your .vimrc:
+```vim
 let g:rspec_command = ":!rspec {test} --color --format progress"
 let g:mix_test_command = ":!mix test {test}"
 
